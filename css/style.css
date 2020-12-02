@@ -1,0 +1,328 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: 'Cinzel', Arial, Helvetica, sans-serif, serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 60px;
+  width: 100%;
+  padding: 0 150px;
+  text-align: center;
+  background: white;
+}
+
+.logo {
+  float: left;
+  padding-top: 20px;
+}
+
+.logo img {
+  height: auto;
+  max-width: 100%;
+}
+
+.mainNav {
+  float: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.mainNav ul {
+  list-style: none;
+  margin: 0;
+}
+
+.mainNav li {
+  float: left;
+  display: block;
+  height: 80px;
+}
+
+.mainNav a {
+  text-decoration: none;
+  padding: 0 25px 0 25px;
+  line-height: 80px;
+  color: rgb(0, 0, 0);
+}
+
+.mainNav .fa {
+  padding-left: 15px;
+  line-height: 80px;
+  font-size: 1.5rem;
+  padding: 0 25px 0 25px;
+}
+
+.bkOnline {
+  float: right;
+  display: block;
+}
+
+.bkOnline a {
+  line-height: 80px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.welcome {
+  float: left;
+  background-image: linear-gradient(to right, rgba(132, 106, 105, 1), rgba(208, 198, 197, 0.5), rgba(188, 182, 186, 1));
+  color: rgb(255, 255, 255);
+}
+
+.welcomeText {
+  float: left;
+  width: 95%;
+  height: auto;
+}
+
+.welcomeText>h1 {
+  font-size: 10rem;
+  font-weight: 400;
+
+}
+
+.welcomeText>p {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 15px 0 0 260px;
+  margin: 0;
+}
+
+.welcomeText>button {
+  border: none;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 20px 30px 20px 30px;
+  margin: 30px 0 0 260px;
+}
+
+.welcome>.vertText {
+  float: right;
+  display: block;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  font-size: 2rem;
+  padding: 250px 40px 0 0;
+}
+
+.coupon {
+  float: left;
+  background: rgb(0, 0, 0);
+  margin: 200px 0 0 260px;
+}
+
+.boxCoupon {
+  padding: 30px 40px;
+  line-height: 45px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.boxCoupon>.percent {
+  font-size: 3rem;
+}
+
+.boxCoupon>button {
+  margin-top: 20px;
+  padding: 10px 30px 10px 30px;
+}
+
+.services {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 100px 200px 100px 200px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.services>.product {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.services>.product>span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.services>.product>p {
+  line-height: 30px;
+  font-family: 'Mulish';
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(127, 127, 127);
+  padding: 0 50px 0 50px;
+}
+
+.momentum {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 75px 200px;
+  background: rgb(243, 244, 246);
+}
+
+.boxMomentum {
+  float: left;
+  width: 50%;
+}
+
+.boxMomentum>h2 {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.boxMomentum>p {
+  line-height: 30px;
+  font-family: 'Mulish';
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(127, 127, 127);
+  padding: 25px 215px 0 0;
+}
+
+.boxMomentum>button {
+  border: none;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 15px 30px 15px 30px;
+  margin-top: 20px;
+}
+
+.stylers {
+  float: left;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.stylers>h2 {
+  margin-top: 150px;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.rowStylers {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.stylerColumn {
+  flex: 33.3333%;
+  max-width: 100%;
+  height: auto;
+}
+
+.stylerColumn img {
+  margin: 20px;
+  vertical-align: middle;
+}
+
+.coupon2 {
+  float: left;
+  background: url(../couponbg.jpg);
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 500px;
+  margin: 100px 485px 100px 485px;
+  color: rgb(255, 255, 255);
+}
+
+.boxCoupon2 {
+  text-align: left;
+  padding: 30px 40px;
+  line-height: 70px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.boxCoupon2>.percent2 {
+  font-size: 7rem;
+}
+
+.boxCoupon2>button {
+  display: block;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  padding: 10px 30px 10px 30px;
+}
+
+.lookbook {
+  float: left;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: rgb(243, 244, 246);
+}
+
+.lookbook>h2 {
+  margin-top: 150px;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.modRow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.modColumn {
+  flex: 33.3333%;
+  max-width: 20%;
+  padding: 10px 10px;
+}
+
+.modColumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  padding: 10px 10px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
